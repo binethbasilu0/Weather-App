@@ -32,4 +32,9 @@ function getWeatherEmoji(watherId){
 function displayError(message){
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
+    errorDisplay.classList.add("errorDisplay");
+
+    card.textContent ="";
+    card.computedStyleMap.display ="flex";
+    card.appendChild(errorDisplay);
 }
